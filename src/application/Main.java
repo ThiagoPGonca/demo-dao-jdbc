@@ -12,7 +12,7 @@ public class Main {
 
         SellerDao sellerDao = DaoFactory.CreateSellerDao();
 
-
+        System.out.println("=== Tetes 1: Seller findById =====");
         Seller seller = sellerDao.findById(3);
 
         System.out.println(seller);
