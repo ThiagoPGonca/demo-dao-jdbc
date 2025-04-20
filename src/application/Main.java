@@ -35,5 +35,11 @@ public class Main {
         sellerDao.insert(newSeller);
         System.out.println("Inserted! New id = " + newSeller.getId());
 
+
+        System.out.println("\n=== Tetes 5: Seller Update =====");
+        seller = sellerDao.findById(1);
+        seller.setName("Marta Wayne");
+        sellerDao.update(seller);
+        System.out.println("Update Completed");
     }
 }
